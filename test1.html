@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body class="xyz">
+    <div class="calci">
+        <input type="text" id="display" class="display" readonly>
+        <div class="button">
+            <button onclick="clearDisplay('')">AC</button>
+            <button onclick="giveValue('%')">%</button>
+            <button onclick="newFunction('+')">+</button>
+            <button onclick="giveValue('/')">/</button>
+            <button onclick="giveValue('7')">7</button>
+            <button onclick="giveValue('8')">8</button>
+            <button onclick="giveValue('9')">9</button>
+            <button onclick="giveValue('*')">*</button>
+            <button onclick="giveValue('4')">4</button>
+            <button onclick="giveValue('5')">5</button>
+            <button onclick="giveValue('6')">6</button>
+            <button onclick="giveValue('-')">-</button>
+            <button onclick="giveValue('1')">1</button>
+            <button onclick="giveValue('2')">2</button>
+            <button onclick="giveValue('3')">3</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="giveValue('0')">0</button>
+                   <p>Thanks for Using</p>
+      </div>
+    </div>
+    <script>
+        function giveValue(value)
+{
+ document.getElementById('display').value += value ;
+}
+function clearDisplay()
+{
+    document.getElementById('display').value=" " ;
+}
+newFunction()
+{
+    document.getElementById('display').value +="-"+value;
+}
+function calculate ()
+{
+ document.getElementById('display');
+ try
+ {
+   display.value=eval(display.value);
+ }
+ catch(error)
+ {
+   display.value ="ERROR"
+ }
+}
+    </script>
+</body>
+</html>
